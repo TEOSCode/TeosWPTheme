@@ -1,44 +1,26 @@
-<article id="post-<?php the_ID(); ?>" class="entry-item <?php echo orbital_customize_option('orbital_loop_columns'); ?>">
-	<div class="entry-card">
-		<header class="entry-header">
+
+<?php
+$feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+
+?>
+<article class="post-card">
+	
+	<div class="post-card-body">
+		<h2 class="post-card-title">
+			<a href="Titulo"><?php the_title();?> </a>
+		</h2>
+		<div class="post-card-category">
+			<a href="Ca" class="post-card-categorylink"><?php if (orbital_customize_option('orbital_loop_category') && ! is_archive()) : ?>
 				
-			<a href="<?php echo esc_url(get_permalink()); ?>" rel="bookmark">
-				<?php
-				if (has_post_thumbnail()) {
-					the_post_thumbnail('thumbnail-center');
-				}
-				the_title('<h3 class="entry-title">', '</h3>');
-				?>
-			</a>
+					<?php echo orbital_the_category_link(); ?>
 			
-			<?php if (orbital_customize_option('orbital_loop_category') && ! is_archive()) : ?>
-				<div class="entry-category">
-					<p><?php echo orbital_the_category_link(); ?></p>
-				</div>
-			<?php endif; ?>
-		</header><!-- .entry-header -->
-		<div class="entry-meta">
-			
-			<?php if (orbital_customize_option('orbital_loop_excerpt')) : ?>
-				<div class="entry-excerpt">
-					
-						<?php the_excerpt(); ?>
-					
-				</div><!-- .entry-content -->
-			<?php endif; ?>
-					
-			
-			<?php if (orbital_customize_option('orbital_loop_date')) : ?>
-				<div class="entry-date">
-					<p><?php echo get_the_date(); ?></p>
-				</div>
-			<?php endif; ?>	
-			<?php if (orbital_customize_option('orbital_loop_author')) : ?>
-				<div class="entry-author">
-					<p><?php the_author(); ?></p>
-				</div>
-			<?php endif; ?>
-			
+			<?php endif; ?></a>
+		</div>
+		<div class="post-card-date"><!-- Tiene flex -->
+			<time ><?php if (orbital_customize_option('orbital_loop_date')) : ?>
+				<?php echo get_the_date(); ?>
+			<?php endif; ?>	</time>
 		</div>
 	</div>
+	<div class="post-card-background" style="z-index:-1; backgorund-color:#151515; background-image:url('<?php echo $feat_image;?>');"</div>
 </article>

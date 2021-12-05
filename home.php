@@ -10,17 +10,27 @@
  */
 
 get_header(); ?>
+<style>
+.post-list{
+	gap: 8px; display: grid;grid-auto-rows: 320px; grid-template-columns: repeat(3,1fr);
+}
+.post-list .post-card:nth-child(7n+1) {
+    grid-column: 1/-2;
+}
+.post-list .post-card:nth-child(7n+7) {
+    grid-column: 2/-1;
+}
+	</style>
+<div id="content" class="site-main">
 
-<main id="content" class="site-main">
-
-	<div id="content-wrapper" class="container flex">
+	<main id="content-wrapper" class="container site-wrapper">
 		
-		<div class="entry-content">
+		<div class="post-listas">
 		
 			<?php if (have_posts()) : ?>
 				<?php do_action('orbital_before_page_home_content'); ?>
 
-				<div class="flex flex-fluid">
+				<div class="post-list" style="">
 
 					<?php
 					while (have_posts()) :
@@ -45,6 +55,15 @@ get_header(); ?>
 		</div>
 
 		<?php get_template_part('template-parts/widgets/widget', 'page-home'); ?>
-	</div>
-</main>
+	</main>
+</div>
+
+<div class="site-wrapper">
+	<main id="site-content" role="main">
+		<div class="post-list">
+
+		</div>
+	</main>
+</div>
+
 <?php get_footer();

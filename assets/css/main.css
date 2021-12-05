@@ -187,7 +187,7 @@ figure figcaption {
 .flex {
   /*  -webkit-box-sizing: border-box;
   box-sizing: border-box; */
-  display: -webkit-box;
+  /* display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 0;
@@ -199,7 +199,95 @@ figure figcaption {
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-between; */
+}
+.post-card-background {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 3px 3px 0 0;
+  bottom: 80px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+}
+.post-card {
+  background: black;
+  background: linear-gradient(to top, #151515 80px, transparent 80%);
+  border-radius: 4px;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+.post-card::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to top, #151515 80px, transparent 100%);
+  transition: opacity 0.3s ease-out;
+  opacity: 0;
+}
+.post-card:hover::before {
+  opacity: 1;
+  cursor: pointer;
+}
+.post-card-link {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-indent: -9999px;
+  top: 0;
+  z-index: 5;
+}
+.post-card-body {
+  bottom: 0;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 14px;
+  left: 0;
+  padding: 20px;
+  position: absolute;
+  right: 0;
+  z-index: 2;
+}
+.post-card-title {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  display: block;
+  font-size: 18px;
+  line-height: 25px;
+  margin: -3px;
+  max-height: calc(25px * 4);
+  overflow: hidden;
+  padding: 3px;
+  position: relative;
+  word-break: break-word;
+}
+.post-card-title a {
+  color: #fff;
+}
+.post-card-categorylink {
+  color: rgba(255, 255, 255, 0.5);
+  margin: 2px -3px -3px;
+  padding: 3px;
+}
+.post-card-date {
+  align-items: flex-start;
+  display: flex;
+  font-size: 13px;
+  margin-top: 15px;
+}
+.post-card-date time {
+  margin-right: auto;
+  overflow: hidden;
+  padding-right: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .flex .right {
   margin-left: auto;
