@@ -193,32 +193,25 @@ if ( ! function_exists( 'orbital_render_block_core_latest_posts' ) ) :
 					} else {
 
 						$output .= '<article class="entry-item">';
+						$output .= '<div class="entry-card">';
+						
 
-						if(orbital_customize_option('orbital_loop_date')) {
-							$output .= '<div class="entry-date">';
-							$output .= '<p class="entry-date-info">' . get_the_date(). '</p>';
-							$output .= '</div>';
-						}
+						
 
-						if(orbital_customize_option('orbital_loop_category') && ! is_archive()) {
-							$output .= '<div class="entry-category">';
-							$output .= '<p class="entry-category-info">' . orbital_the_category_link() . '</p>';
-							$output .= '</div>';
-						}
-
-
+						
 						$output .= '<header class="entry-header">';
 						$output .= '<a href="'. $setting['link'] . '" rel="bookmark ' . $nofollow . '" '. $openlink .'>';
 						if(isset($image)) { $output .= $image; }
 						$output .= '<h3 class="entry-title">'.$setting['heading'].'</h3>';
 						$output .= '</a>';
-						$output .= '</header>';
-						$output .= '<div class="entry-meta">';
-						if(orbital_customize_option('orbital_loop_author')) {
-							$output .= '<div class="entry-author">';
-							$output .= '<p class="entry-author-info">' . get_the_author() . '</p>';
+						if(orbital_customize_option('orbital_loop_category') && ! is_archive()) {
+							$output .= '<div class="entry-category">';
+							$output .= '<p class="entry-category-info">' . orbital_the_category_link() . '</p>';
 							$output .= '</div>';
 						}
+						$output .= '</header>';
+						$output .= '<div class="entry-meta">';
+						
 
 						if(orbital_customize_option('orbital_loop_excerpt')) {
 							$output .= '<div class="entry-excerpt">';
@@ -230,6 +223,17 @@ if ( ! function_exists( 'orbital_render_block_core_latest_posts' ) ) :
 
 							$output .= '</div>';
 						}
+						if(orbital_customize_option('orbital_loop_date')) {
+							$output .= '<div class="entry-date">';
+							$output .= '<p class="entry-date-info">' . get_the_date(). '</p>';
+							$output .= '</div>';
+						}
+						if(orbital_customize_option('orbital_loop_author')) {
+							$output .= '<div class="entry-author">';
+							$output .= '<p class="entry-author-info">' . get_the_author() . '</p>';
+							$output .= '</div>';
+						}
+						$output .= '</div>';
 						$output .= '</div>';
 						$output .= '</article>';
 

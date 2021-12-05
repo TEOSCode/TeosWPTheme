@@ -1,6 +1,7 @@
 <article id="post-<?php the_ID(); ?>" class="entry-item <?php echo orbital_customize_option('orbital_cluster_columns'); ?>">
 	<?php if (orbital_customize_option('orbital_loop_date')) : ?>
 		<div class="entry-date">
+			
 			<p><?php echo get_the_date(); ?></p>
 		</div>
 	<?php endif; ?>

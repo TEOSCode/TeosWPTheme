@@ -3,18 +3,20 @@
 		<?php if (is_single()) : ?>
 			<?php do_action('orbital_before_single_title'); ?>
 
-			<?php if (orbital_customize_option('orbital_posts_show_category')) : ?>
-				<div class="category">
-					<?php echo orbital_the_category_link(); ?>
-				</div>
-
-			<?php endif; ?>
+			
 
 			<?php the_title('<h1 class="title">', '</h1>'); ?>
-
-			<div class="meta">
-				<?php orbital_posted_on(); ?>
+			<div class="post-meta-info">
+				<?php if (orbital_customize_option('orbital_posts_show_category')) : ?>
+					<div class="category post-category">
+						<?php echo "En " . orbital_the_category_link(); ?>
+					</div>
+				<?php endif; ?>
+				<div class="post-meta">
+					<?php orbital_posted_on(); ?>
+				</div>
 			</div>
+			
 
 			<?php orbital_subtitle(); ?>
 
