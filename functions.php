@@ -22,11 +22,11 @@ if (version_compare($GLOBALS['wp_version'], '4.7', '<')) {
 
 /*
  * Update System
- */
+ 
 
 require get_template_directory() . '/inc/class-wp-license-manager-client.php';
 
-
+*/
 /*
  * Theme Setup
  */
