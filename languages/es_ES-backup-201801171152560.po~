@@ -1,0 +1,844 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Orbital\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-01-17 11:35+0000\n"
+"PO-Revision-Date: 2018-01-17 11:36+0000\n"
+"Last-Translator: bigseo <local@local.local>\n"
+"Language-Team: Spanish (Spain)\n"
+"Language: es-ES\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#: woocommerce/single-product-reviews.php:104
+msgid ""
+"Only logged in customers who have purchased this product may leave a review."
+msgstr ""
+
+#: inc/customizer-parts/customizer-control.php:25
+msgid "Leer más"
+msgstr ""
+
+#: inc/customizer-parts/customizer-control.php:77
+msgid ""
+"Recuerda las limitaciones y <a rel=\"nofollow\" target=\"_blank\" "
+"href=\"https://support.google.com/adsense/answer/48182\">politicas de "
+"Adsense de Google.</a>"
+msgstr ""
+
+#: inc/customizer-parts/customizer-control.php:396
+msgid "Orbital Menu"
+msgstr ""
+
+#: inc/customizer-parts/customizer-control.php:406
+msgid "Fix Render Blocking CSS"
+msgstr ""
+
+#: inc/customizer-parts/customizer-control.php:416
+msgid "Fix Render Blocking JS"
+msgstr ""
+
+#: inc/customizer-parts/customizer-control.php:482
+msgid "Dismiss Text"
+msgstr ""
+
+#: inc/customizer-parts/customizer-control.php:616
+#: inc/customizer-parts/customizer-control.php:626
+#: inc/customizer-parts/customizer-control.php:636
+msgid "Puedes introducir una URL. Por ejemplo de Google Fonts."
+msgstr ""
+
+#: inc/customizer-parts/customizer-woocommerce.php:18
+msgid "Novedades"
+msgstr ""
+
+#: inc/customizer-parts/customizer-woocommerce.php:19
+msgid "Precio"
+msgstr ""
+
+#: inc/customizer-parts/customizer-woocommerce.php:35
+msgid "Home Section"
+msgstr ""
+
+#: inc/customizer-parts/customizer-woocommerce.php:48
+msgid "Ordenar por ..."
+msgstr ""
+
+#: inc/customizer-parts/customizer-woocommerce.php:59
+msgid "Cantidad de productos"
+msgstr ""
+
+#: inc/customizer-parts/customizer-social.php:34
+msgid "Social Settings"
+msgstr "Opciones de Redes Sociales"
+
+#: comments.php:17
+msgid "Comments are closed."
+msgstr "Los comentarios están cerrados."
+
+#: comments.php:31
+#, php-format
+msgid "Comments (%1$s)"
+msgstr "Comentarios (%1$s)"
+
+#: comments.php:48
+msgid "Comment navigation"
+msgstr "Navegación de comentarios"
+
+#: functions.php:48
+msgid "Primary Menu"
+msgstr "Menú principal"
+
+#: functions.php:142
+msgid "Posts Sidebar"
+msgstr "Barra lateral de entradas"
+
+#: functions.php:144 functions.php:154 functions.php:165 functions.php:176
+#: functions.php:186 functions.php:196 functions.php:206 functions.php:216
+#: functions.php:226 functions.php:236 functions.php:247 functions.php:258
+msgid "Add widgets here."
+msgstr "Añade widgets aquí"
+
+#: functions.php:152
+msgid "Pages Sidebar"
+msgstr "Barra lateral de páginas"
+
+#: functions.php:163
+msgid "Pilar Pages Sidebar"
+msgstr "Barra Lateral de páginas pilar"
+
+#: functions.php:174
+msgid "Page Home Sidebar"
+msgstr "Barra lateral de página principal"
+
+#: functions.php:184
+msgid "No advertisment Sidebar"
+msgstr "Barra lateral sin publicidad"
+
+#: functions.php:194
+msgid "Archives Sidebar"
+msgstr "Barra lateral en taxonomias"
+
+#: functions.php:204
+msgid "Footer Widget Area 1"
+msgstr "Zona de widgets Pie 1"
+
+#: functions.php:214
+msgid "Footer Widget Area 2"
+msgstr "Zona de widgets Pie 2"
+
+#: functions.php:224
+msgid "Footer Widget Area 3"
+msgstr "Zona de widgets Pie 3"
+
+#: functions.php:234
+msgid "Footer Widget Area 4"
+msgstr "Zona de widgets Pie 4"
+
+#: functions.php:245
+msgid "Content 404"
+msgstr "Contenido 404"
+
+#: functions.php:256
+msgid "Shop Sidebar"
+msgstr "Barra lateral de tienda"
+
+#: header.php:23
+msgid "Skip to content"
+msgstr "Saltar al contenido"
+
+#: searchform.php:14 searchform.php:14
+msgid "Search for:"
+msgstr "Buscar:"
+
+#: inc/back-compat.php:23 inc/back-compat.php:28 inc/back-compat.php:35
+#, php-format
+msgid ""
+"Orbital requires at least WordPress version 4.7. You are running version %s. "
+"Please upgrade and try again."
+msgstr ""
+"Orbital necesita al menos la versión 4.7 de Wordpress. Usted tiene la "
+"versión %s. Por favor actualice y inténtelo de nuevo."
+
+#: inc/class-wp-license-manager-client.php:48
+#: inc/class-wp-license-manager-client.php:89
+#, php-format
+msgid "%s License"
+msgstr "%s Licencia"
+
+#: inc/class-wp-license-manager-client.php:64
+msgid "License"
+msgstr "Licencia"
+
+#: inc/class-wp-license-manager-client.php:70
+msgid "License e-mail address"
+msgstr "Email de licencia"
+
+#: inc/class-wp-license-manager-client.php:77
+msgid "License key"
+msgstr "Clave de licencia"
+
+#: inc/class-wp-license-manager-client.php:85
+msgid "Insert your license information to enable updates."
+msgstr "Añade tus datos de licencia para activar las actualizaciones"
+
+#: inc/class-wp-license-manager-client.php:105
+msgid "Status: Not activated"
+msgstr "Estado: No activado"
+
+#: inc/class-wp-license-manager-client.php:107
+msgid "Status: Activated"
+msgstr "Estado: Activado"
+
+#: inc/class-wp-license-manager-client.php:136
+#, php-format
+msgid "Please enter your email and license key to enable updates to %s."
+msgstr ""
+"Por favor introduce el email y clave de licencia para activar las "
+"actualizaciones de %s."
+
+#: inc/class-wp-license-manager-client.php:145
+msgid "Complete the setup now."
+msgstr "Completa la instalación ahora."
+
+#: inc/extras.php:256
+msgid "Top Description"
+msgstr "Descripción superior"
+
+#: inc/extras.php:269
+msgid ""
+"The description is not prominent by default; however, some themes may show "
+"it."
+msgstr ""
+"Esta descripción no existe por defecto, algunos temas pueden mostrarla."
+
+#: inc/meta-box.php:31
+msgid "Subtitle"
+msgstr "Subtítulo"
+
+#: inc/meta-box.php:37
+msgid "Sidebar"
+msgstr "Barra lateral"
+
+#: inc/meta-box.php:43
+msgid "Advertisment"
+msgstr "Publicidad"
+
+#: inc/meta-box.php:49
+msgid "Thumbnail"
+msgstr "Imagen destacada"
+
+#. Name of the template
+#: inc/meta-box.php:55
+msgid "Pilar Page"
+msgstr "Página Pilar"
+
+#: inc/meta-box.php:60 template-parts/single/content-related.php:17
+msgid "Related Posts"
+msgstr "Entradas relacionadas"
+
+#: inc/meta-box.php:121
+msgid "Option Page"
+msgstr "Opciones de página"
+
+#: inc/template-tags.php:149
+#, php-format
+msgid "by %s"
+msgstr "por %s"
+
+#: inc/woocommerce-filters.php:53 inc/woocommerce-filters.php:236
+msgid "View your shopping cart"
+msgstr "Ver carrito de compra"
+
+#: inc/woocommerce-filters.php:54
+msgid "Start shopping"
+msgstr "Comenzar a comprar"
+
+#: inc/woocommerce-filters.php:58
+#, php-format
+msgid "%d "
+msgid_plural "%d "
+msgstr[0] "%d "
+msgstr[1] "%d "
+
+#: inc/woocommerce-filters.php:88 inc/woocommerce-filters.php:103
+msgid "Details"
+msgstr "Detalles"
+
+#: inc/woocommerce-filters.php:90 inc/woocommerce-filters.php:107
+msgid "Detailed category info to appear below the product list"
+msgstr "Información detallada de la categoria"
+
+#: inc/woocommerce-filters.php:226
+msgid "In Stock"
+msgstr "Producto disponible"
+
+#: inc/woocommerce-filters.php:236
+#, php-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] "%d elemento"
+msgstr[1] "%d elementos"
+
+#: inc/wpgallery.php:236
+msgid "Masonry"
+msgstr "Masonry"
+
+#: inc/wpgallery.php:240
+msgid "Titles"
+msgstr "Títulos"
+
+#: inc/wpgallery.php:244
+msgid "Legend"
+msgstr "Leyenda"
+
+#: inc/wpgallery.php:248
+msgid "Wrapper"
+msgstr "Contenedor"
+
+#. Name of the template
+msgid "Page without Ads"
+msgstr "Página sin publicidad"
+
+#. Name of the template
+msgid "Page without Sidebar"
+msgstr "Página sin sidebar"
+
+#. Name of the template
+msgid "Single without Adsense"
+msgstr "Entrade sin publicidad"
+
+#. Name of the template
+msgid "Single without Sidebar"
+msgstr "Entrada sin sidebar"
+
+#: woocommerce/product-searchform.php:19
+msgctxt "placeholder"
+msgid "Search Products&hellip;"
+msgstr "Buscar Productos&hellip;"
+
+#: woocommerce/product-searchform.php:19
+msgctxt "label"
+msgid "Search for:"
+msgstr "Búsqueda para:"
+
+#: woocommerce/single-product-reviews.php:31
+#, php-format
+msgid "%1$s review for %2$s"
+msgid_plural "%1$s reviews for %2$s"
+msgstr[0] "%1$s análisis para %2$s"
+msgstr[1] "%1$s análisis para %2$s"
+
+#: woocommerce/single-product-reviews.php:33
+msgid "Reviews"
+msgstr "Análisis"
+
+#: woocommerce/single-product-reviews.php:55
+msgid "There are no reviews yet."
+msgstr "Aún no existen análisis"
+
+#: woocommerce/single-product-reviews.php:67
+msgid "Add a review"
+msgstr "Añade un análisis"
+
+#: woocommerce/single-product-reviews.php:67
+#, php-format
+msgid "Be the first to review &ldquo;%s&rdquo;"
+msgstr "Sé el primero en analizar &ldquo;%s&rdquo;"
+
+#: woocommerce/single-product-reviews.php:68
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr "Deja una respuesta en %s"
+
+#: woocommerce/single-product-reviews.php:73
+msgid "Name"
+msgstr "Nombre"
+
+#: woocommerce/single-product-reviews.php:75
+msgid "Email"
+msgstr "Email"
+
+#: woocommerce/single-product-reviews.php:78
+msgid "Submit"
+msgstr "Enviar"
+
+#: woocommerce/single-product-reviews.php:84
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a review."
+msgstr "Debes estar <a href=\"%s\">logueado</a> para enviar un análisis."
+
+#: woocommerce/single-product-reviews.php:87
+msgid "Your rating"
+msgstr "Tu puntuacion"
+
+#: woocommerce/single-product-reviews.php:88
+msgid "Rate&hellip;"
+msgstr "Puntuación"
+
+#: woocommerce/single-product-reviews.php:89
+msgid "Perfect"
+msgstr "Perfecto"
+
+#: woocommerce/single-product-reviews.php:90
+msgid "Good"
+msgstr "Bueno"
+
+#: woocommerce/single-product-reviews.php:91
+msgid "Average"
+msgstr "Regular"
+
+#: woocommerce/single-product-reviews.php:92
+msgid "Not that bad"
+msgstr "Malo"
+
+#: woocommerce/single-product-reviews.php:93
+msgid "Very poor"
+msgstr "Muy malo"
+
+#: woocommerce/single-product-reviews.php:96
+msgid "Your review"
+msgstr "Tu análisis"
+
+#: inc/customizer-parts/customizer-advertisment.php:16
+msgid "Before Home"
+msgstr "Antes de la página principal"
+
+#: inc/customizer-parts/customizer-advertisment.php:17
+msgid "After Featured Home"
+msgstr "Después de los destacados en principal"
+
+#: inc/customizer-parts/customizer-advertisment.php:18
+msgid "After Home"
+msgstr "Después de la página principal"
+
+#: inc/customizer-parts/customizer-advertisment.php:22
+msgid "Before Home Mobile"
+msgstr "Antes de página principal en móvil"
+
+#: inc/customizer-parts/customizer-advertisment.php:23
+msgid "After Featured Home Mobile"
+msgstr "Después de los destacados en principal en móvil"
+
+#: inc/customizer-parts/customizer-advertisment.php:24
+msgid "After Home Mobile"
+msgstr "Después de la página principal en móvil"
+
+#: inc/customizer-parts/customizer-advertisment.php:28
+msgid "Before Single Content"
+msgstr "Antes de la entrada"
+
+#: inc/customizer-parts/customizer-advertisment.php:29
+msgid "Middle Single Content"
+msgstr "Dentro de la entrada"
+
+#: inc/customizer-parts/customizer-advertisment.php:30
+msgid "After Single Content"
+msgstr "Después de la entrada"
+
+#: inc/customizer-parts/customizer-advertisment.php:34
+msgid "Before Single Content Mobile"
+msgstr "Antes de la entrada en móvil"
+
+#: inc/customizer-parts/customizer-advertisment.php:35
+msgid "Middle Single Content Mobile"
+msgstr "Dentro de la entrada en móvil"
+
+#: inc/customizer-parts/customizer-advertisment.php:36
+msgid "After Single Content Mobile"
+msgstr "Después de la entrada en móvil"
+
+#: inc/customizer-parts/customizer-advertisment.php:40
+msgid "Before Page Content"
+msgstr "Antes de la página"
+
+#: inc/customizer-parts/customizer-advertisment.php:41
+msgid "Middle Page Content"
+msgstr "Dentro de la página"
+
+#: inc/customizer-parts/customizer-advertisment.php:42
+msgid "After Page Content"
+msgstr "Después de la página"
+
+#: inc/customizer-parts/customizer-advertisment.php:46
+msgid "Before Page Content Mobile"
+msgstr "Antes de la página en móvil"
+
+#: inc/customizer-parts/customizer-advertisment.php:47
+msgid "Middle Page Content Mobile"
+msgstr "Dentro de la página en móvil"
+
+#: inc/customizer-parts/customizer-advertisment.php:48
+msgid "After Page Content Mobile"
+msgstr "Después de la página en móvil"
+
+#: inc/customizer-parts/customizer-advertisment.php:52
+msgid "Before Archive"
+msgstr "Antes de la categoría"
+
+#: inc/customizer-parts/customizer-advertisment.php:53
+msgid "After Featured Archive"
+msgstr "Después de destacados en categoría"
+
+#: inc/customizer-parts/customizer-advertisment.php:54
+msgid "After Archive"
+msgstr "Después de la categoría"
+
+#: inc/customizer-parts/customizer-advertisment.php:55
+msgid "After Description Archive"
+msgstr "Después de la descripción de la categoría"
+
+#: inc/customizer-parts/customizer-advertisment.php:59
+msgid "Before Archive Mobile"
+msgstr "Antes de la categoría en móvil"
+
+#: inc/customizer-parts/customizer-advertisment.php:60
+msgid "After Featured Archive Mobile"
+msgstr "Después de destacados en categoría en móvil"
+
+#: inc/customizer-parts/customizer-advertisment.php:61
+msgid "After Archive Mobile"
+msgstr "Después de la categoría en móvil"
+
+#: inc/customizer-parts/customizer-advertisment.php:62
+msgid "After Description Archive Mobile"
+msgstr "Después de la descripción de la categoría en móvil"
+
+#: inc/customizer-parts/customizer-advertisment.php:83
+msgid "Home Advertisment"
+msgstr "Anuncios en página principal"
+
+#: inc/customizer-parts/customizer-advertisment.php:162
+msgid "Home Mobile Advertisment"
+msgstr "Anuncios en página principal en móvil"
+
+#: inc/customizer-parts/customizer-advertisment.php:235
+msgid "Single Advertisment"
+msgstr "Anuncios en la entrada"
+
+#: inc/customizer-parts/customizer-advertisment.php:359
+msgid "Single Mobile Advertisment"
+msgstr "Anuncios en la entrada en móvil"
+
+#: inc/customizer-parts/customizer-advertisment.php:483
+msgid "Page Advertisment"
+msgstr "Anuncios en la página"
+
+#: inc/customizer-parts/customizer-advertisment.php:605
+msgid "Page Mobile Advertisment"
+msgstr "Anuncios en la página en móvil"
+
+#: inc/customizer-parts/customizer-advertisment.php:730
+msgid "Archive Advertisment"
+msgstr "Anuncios en la categoría"
+
+#: inc/customizer-parts/customizer-advertisment.php:802
+msgid "Archive Mobile Advertisment"
+msgstr "Anuncios en la categoría en móvil"
+
+#: inc/customizer-parts/customizer-control.php:13
+msgid ""
+"This website uses cookies to ensure you get the best experience on our "
+"website."
+msgstr ""
+"Este sitio web utiliza cookies para asegurarle una mejor experiencia en "
+"nuestro sitio web."
+
+#: inc/customizer-parts/customizer-control.php:14
+msgid "Got it!"
+msgstr "De acuerdo!"
+
+#: inc/customizer-parts/customizer-control.php:15
+msgid "Learn more"
+msgstr "Leer más"
+
+#: inc/customizer-parts/customizer-control.php:16
+msgid "#"
+msgstr "#"
+
+#: inc/customizer-parts/customizer-control.php:46
+msgid "Layout Settings"
+msgstr "Opciones de apariencia"
+
+#: inc/customizer-parts/customizer-control.php:52
+msgid "Posts Settings"
+msgstr "Opciones de entradas"
+
+#: inc/customizer-parts/customizer-control.php:58
+msgid "Typography Settings"
+msgstr "Opciones de tipografías"
+
+#: inc/customizer-parts/customizer-control.php:64
+msgid "Loops Settings"
+msgstr "Opciones de listado"
+
+#: inc/customizer-parts/customizer-control.php:70
+msgid "SEO Settings"
+msgstr "Opciones SEO"
+
+#: inc/customizer-parts/customizer-control.php:76
+msgid "Adsense and Analytics"
+msgstr "Publicidad y Analytics"
+
+#: inc/customizer-parts/customizer-control.php:82
+msgid "Cookies Settings"
+msgstr "Opciones de Cookies"
+
+#: inc/customizer-parts/customizer-control.php:311
+msgid "Link Color"
+msgstr "Color de enlaces"
+
+#: inc/customizer-parts/customizer-control.php:320
+msgid "Navbar Background Color"
+msgstr "Color de fondo del Menú"
+
+#: inc/customizer-parts/customizer-control.php:329
+msgid "Navbar Link Color"
+msgstr "Color de enlaces del menú"
+
+#: inc/customizer-parts/customizer-control.php:344
+msgid "Container Width"
+msgstr "Ancho de contenedor"
+
+#: inc/customizer-parts/customizer-control.php:359
+msgid "Content-Sidebar Relation"
+msgstr "Relación Contenido-Barra Lateral "
+
+#: inc/customizer-parts/customizer-control.php:375
+msgid "Sidebar Order"
+msgstr "Prioridad Barra Lateral"
+
+#: inc/customizer-parts/customizer-control.php:386
+msgid "Sticky Sidebar"
+msgstr "Barra lateral fija"
+
+#: inc/customizer-parts/customizer-control.php:430
+#: inc/customizer-parts/customizer-control.php:531
+msgid "Show Thumbnails"
+msgstr "Mostrar imagenes destacadas"
+
+#: inc/customizer-parts/customizer-control.php:440
+msgid "Show Related Posts"
+msgstr "Mostrar Entradas Relacionadas"
+
+#: inc/customizer-parts/customizer-control.php:450
+msgid "Show Category Link"
+msgstr "Mostrar enlace a categoría"
+
+#: inc/customizer-parts/customizer-control.php:464
+msgid "Enable Cookies"
+msgstr "Activar Cookies"
+
+#: inc/customizer-parts/customizer-control.php:473
+msgid "Cookies Message"
+msgstr "Mensaje de Cookies"
+
+#: inc/customizer-parts/customizer-control.php:491
+msgid "Link Text"
+msgstr "Texto del enlace"
+
+#: inc/customizer-parts/customizer-control.php:500
+msgid "Link Cookies"
+msgstr "Enlace de Cookies"
+
+#: inc/customizer-parts/customizer-control.php:514
+msgid "Analytics Code"
+msgstr "Código de Analytics"
+
+#: inc/customizer-parts/customizer-control.php:519
+msgid "Insert Analytics Code with script tag"
+msgstr "Inserta el código de Analytics con la etiqueta script"
+
+#: inc/customizer-parts/customizer-control.php:540
+msgid "Show Excerpt"
+msgstr "Mostrar descripción"
+
+#: inc/customizer-parts/customizer-control.php:549
+msgid "Show Date"
+msgstr "Mostrar fecha"
+
+#: inc/customizer-parts/customizer-control.php:558
+msgid "Show Category"
+msgstr "Mostrar categoría"
+
+#: inc/customizer-parts/customizer-control.php:567
+msgid "Show Author"
+msgstr "Mostrar autor"
+
+#: inc/customizer-parts/customizer-control.php:576
+msgid "Excerpt Length"
+msgstr "Longitud de la descripción"
+
+#: inc/customizer-parts/customizer-control.php:590
+msgid "Number of columns"
+msgstr "Numero de columnas"
+
+#: inc/customizer-parts/customizer-control.php:602
+msgid "Read More Text"
+msgstr "Texto Leer más"
+
+#: inc/customizer-parts/customizer-control.php:615
+msgid "Typo Logo"
+msgstr "Tipografía del logo"
+
+#: inc/customizer-parts/customizer-control.php:625
+msgid "Typo Headings"
+msgstr "Tipografía de los títulos"
+
+#: inc/customizer-parts/customizer-control.php:635
+msgid "Typo Body"
+msgstr "Tipografía general"
+
+#: inc/customizer-parts/customizer-social.php:42
+msgid "Fixed Bottom"
+msgstr "Inferior Fijo"
+
+#: inc/customizer-parts/customizer-social.php:43
+#: inc/customizer-parts/customizer-social.php:49
+#: inc/customizer-parts/customizer-social.php:55
+msgid ""
+"Twitter counts need connect to <a target=\"_blank\" href=\"http:"
+"//newsharecounts.com/\">http://newsharecounts.com/</a>"
+msgstr ""
+"El contador de Twitter necesita conectarse a <a target=\"_blank\" "
+"href=\"http://newsharecounts.com/\">http://newsharecounts.com/</a>"
+
+#: inc/customizer-parts/customizer-social.php:48
+msgid "Fixed Side"
+msgstr "Lateral Fijo"
+
+#: inc/customizer-parts/customizer-social.php:54
+msgid "Before Content"
+msgstr "Antes del contenido"
+
+#: inc/customizer-parts/customizer-social.php:60
+msgid "After Content"
+msgstr "Después del contenido"
+
+#: inc/customizer-parts/customizer-woocommerce.php:6
+msgid "Woocommerce Home"
+msgstr "Página principal de la tienda"
+
+#: inc/customizer-parts/customizer-woocommerce.php:7
+msgid "Shop configuration "
+msgstr "Configuración de la tienda"
+
+#: inc/customizer-parts/customizer-woocommerce.php:17
+msgid "Random"
+msgstr "Aleatorio"
+
+#: inc/customizer-parts/customizer-woocommerce.php:43
+msgid "Order by"
+msgstr "Ordenar por"
+
+#: inc/customizer-parts/customizer-woocommerce.php:52
+msgid "Number of products"
+msgstr "Numero de productos"
+
+#: inc/widgets/class-wp-widget-recent-posts.php:18
+msgid "Your site&#8217;s most recent Posts."
+msgstr "Las entradas recientes de tu página"
+
+#: inc/widgets/class-wp-widget-recent-posts.php:21
+msgid "Orbital: Recent Posts"
+msgstr "Orbital: Entradas recientes"
+
+#: inc/widgets/class-wp-widget-recent-posts.php:30
+msgid "Recent Posts"
+msgstr "Entradas recientes"
+
+#: inc/widgets/class-wp-widget-recent-posts.php:127
+msgid "Title:"
+msgstr "Título:"
+
+#: inc/widgets/class-wp-widget-recent-posts.php:132
+msgid "Number of posts to show:"
+msgstr "Número de entradas para mostrar"
+
+#: inc/widgets/class-wp-widget-recent-posts.php:138
+msgid "Display post date?"
+msgstr "¿Mostrar fecha?"
+
+#: inc/widgets/class-wp-widget-recent-posts.php:143
+msgid "Display thumbnail?"
+msgstr "¿Mostrar thumbnail?"
+
+#: template-parts/header/header-default.php:54
+#: template-parts/header/header-jumbotron.php:31
+#, php-format
+msgid "Search results for %s"
+msgstr "Resultados de búsqueda para %s"
+
+#: template-parts/header/header-default.php:58
+#: template-parts/header/header-jumbotron.php:35
+msgid "404: Page Not Found"
+msgstr "404: Página no encontrada"
+
+#: template-parts/none/content-none.php:3
+msgid "Nothing Found"
+msgstr "Nada encontrado"
+
+#: template-parts/none/content-none.php:7
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"¿Preparado para publicar tu primera entrada? <a href=\"%1$s\">Empieza "
+"aquí</a>."
+
+#: template-parts/none/content-none.php:9
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Lo sentimos pero no hemos encontrado lo que estás buscando. Prueba con "
+"diferentes palabras clave."
+
+#: template-parts/none/content-none.php:13
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Parace que no podemos encontrar lo que estas buscando. Quizá el buscador te "
+"ayude."
+
+#: woocommerce/single-product/meta.php:24
+msgid "Tag:"
+msgid_plural "Tags:"
+msgstr[0] "Etiqueta:"
+msgstr[1] "Etiquetas:"
+
+#: woocommerce/single-product/related.php:35
+msgid "Related Products"
+msgstr "Productos relacionados"
+
+#: woocommerce/single-product/related.php:46
+#: woocommerce/single-product/tabs/additional-information.php:22
+msgid "Additional information"
+msgstr "Información adicional"
+
+#. Name of the theme
+msgid "Orbital"
+msgstr "Orbital"
+
+#. Description of the theme
+msgid ""
+"Proudly coded by Pau Casanellas, member of Mi taladro perforará el cielo S.L"
+msgstr ""
+"Orgullosamente codificado por Pau Casanellas, miembro de Mi taladro "
+"perforará el cielo S.L"
+
+#. URI of the theme
+msgid "https://romualdfons.com/mejor-tema-wordpress-seo/"
+msgstr "https://romualdfons.com/mejor-tema-wordpress-seo/"
+
+#. Author of the theme
+msgid "Pau Casanellas"
+msgstr "Pau Casanellas"
+
+#. Author URI of the theme
+msgid "http://romualdfons.com/"
+msgstr "http://romualdfons.com/"
