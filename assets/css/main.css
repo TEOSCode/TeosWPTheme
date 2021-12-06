@@ -201,41 +201,48 @@ figure figcaption {
   flex-wrap: wrap;
   justify-content: space-between; */
 }
-.post-card-background {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 3px 3px 0 0;
-  bottom: 80px;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 0;
+.post-list {
+  gap: 8px;
+  display: grid;
+  grid-auto-rows: 320px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.post-list .post-card:nth-child(7n + 1) {
+  grid-column: 1/-2;
+}
+.post-list .post-card:nth-child(7n + 7) {
+  grid-column: 2/-1;
+}
+.post-list-small {
+  gap: 8px;
+  display: grid;
+  grid-auto-rows: 280px;
+  grid-template-columns: repeat(4, 1fr);
 }
 .post-card {
   background: black;
-  background: linear-gradient(to top, #151515 80px, transparent 80%);
+  background: linear-gradient(to top, #000000 80px, transparent 80%);
   border-radius: 4px;
   box-sizing: border-box;
   overflow: hidden;
   position: relative;
 }
-.post-card::before {
+.post-card::after {
   position: absolute;
   content: '';
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(to top, #151515 80px, transparent 100%);
+  background: linear-gradient(to top, #000000 80px, transparent 100%);
   transition: opacity 0.3s ease-out;
   opacity: 0;
 }
-.post-card:hover::before {
+.post-card:hover::after {
   opacity: 1;
   cursor: pointer;
 }
+
 .post-card-link {
   bottom: 0;
   left: 0;
@@ -271,7 +278,7 @@ figure figcaption {
 .post-card-title a {
   color: #fff;
 }
-.post-card-categorylink {
+.post-card-category a {
   color: rgba(255, 255, 255, 0.5);
   margin: 2px -3px -3px;
   padding: 3px;
@@ -288,6 +295,18 @@ figure figcaption {
   padding-right: 10px;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+.post-card-background {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 3px 3px 0 0;
+  bottom: 80px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
 }
 .flex .right {
   margin-left: auto;
@@ -1179,9 +1198,9 @@ ol {
   line-height: 1.1;
   font-size: 0.8125rem;
 }
-.entry-related img {
+/* .entry-related img {
   border-radius: 8px;
-}
+} */
 .entry-wrapper {
   padding: 1rem;
   border: 1px solid #eee;

@@ -10,7 +10,17 @@
  */
 
 get_header(); ?>
-
+<style>
+.post-list{
+	gap: 8px; display: grid;grid-auto-rows: 320px; grid-template-columns: repeat(3,1fr);
+}
+.post-list .post-card:nth-child(7n+1) {
+    grid-column: 1/-2;
+}
+.post-list .post-card:nth-child(7n+7) {
+    grid-column: 2/-1;
+}
+	</style>
 <main id="content" class="site-main">
 
 	<?php get_template_part('template-parts/header/header', 'default'); ?>
@@ -26,24 +36,13 @@ get_header(); ?>
 			<?php do_action('orbital_before_archive_loop'); ?>
 
 			<?php if (have_posts()) : ?>
-				<div class="flex flex-fluid">
+				<div class="post-list">
 
 					<?php
-					$featured = 0;
-
 					while (have_posts()) :
 						the_post();
-
-						if ($featured == 3) {
-							do_action('orbital_after_featured_archive');
-						}
-
-						if ($featured < 3) {
-							get_template_part('template-parts/loops/loop', 'featured');
-						} else {
-							get_template_part('template-parts/loops/loop', 'grid');
-						}
-						$featured++;
+						get_template_part('template-parts/loops/loop', 'grid');
+						
 					endwhile;
 					?>
 

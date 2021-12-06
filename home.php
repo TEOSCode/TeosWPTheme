@@ -11,15 +11,7 @@
 
 get_header(); ?>
 <style>
-.post-list{
-	gap: 8px; display: grid;grid-auto-rows: 320px; grid-template-columns: repeat(3,1fr);
-}
-.post-list .post-card:nth-child(7n+1) {
-    grid-column: 1/-2;
-}
-.post-list .post-card:nth-child(7n+7) {
-    grid-column: 2/-1;
-}
+
 	</style>
 <div id="content" class="site-main">
 
@@ -58,12 +50,5 @@ get_header(); ?>
 	</main>
 </div>
 
-<div class="site-wrapper">
-	<main id="site-content" role="main">
-		<div class="post-list">
-
-		</div>
-	</main>
-</div>
 
 <?php get_footer();
