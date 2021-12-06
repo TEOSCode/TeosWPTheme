@@ -15,9 +15,9 @@ get_header(); ?>
 	</style>
 <div id="content" class="site-main">
 
-	<main id="content-wrapper" class="container site-wrapper">
+	<main id="content-wrapper" class="container site-wrapper flex">
 		
-		<div class="post-listas">
+		<div class="post-listas entry-content">
 		
 			<?php if (have_posts()) : ?>
 				<?php do_action('orbital_before_page_home_content'); ?>
