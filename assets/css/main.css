@@ -207,7 +207,7 @@ figure figcaption {
   grid-auto-rows: 320px;
   grid-template-columns: repeat(3, 1fr);
 }
-.post-list .post-card:nth-child(7n + 1) {
+.post-list .post-card:nth-child(7n + 4) {
   grid-column: 1/-2;
 }
 .post-list .post-card:nth-child(7n + 7) {
