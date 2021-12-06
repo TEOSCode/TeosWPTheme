@@ -22,7 +22,7 @@ get_header(); ?>
 			<?php if (have_posts()) : ?>
 				<?php do_action('orbital_before_page_home_content'); ?>
 
-				<div class="post-list" style="">
+				<div class="post-list">
 
 					<?php
 					while (have_posts()) :
