@@ -201,17 +201,31 @@ figure figcaption {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
+@media (min-width: 320px) {
+  .post-list {
+    grid-column: viewport;
+    grid-template-columns: inherit;
+  }
+}
+@media (min-width: 700px) {
+  .post-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 780px) {
+  .post-list .post-card:nth-child(7n + 4) {
+    grid-column: 1/-2;
+  }
+  .post-list .post-card:nth-child(7n + 7) {
+    grid-column: 2/-1;
+  }
+}
 .post-list {
-  gap: 8px;
   display: grid;
+  gap: 8px;
   grid-auto-rows: 320px;
   grid-template-columns: repeat(3, 1fr);
-}
-.post-list .post-card:nth-child(7n + 4) {
-  grid-column: 1/-2;
-}
-.post-list .post-card:nth-child(7n + 7) {
-  grid-column: 2/-1;
 }
 .post-list-small {
   gap: 8px;
@@ -307,6 +321,10 @@ figure figcaption {
   right: 0;
   top: 0;
   z-index: 0;
+}
+.wp-block-categories-list .cat-item {
+  display: flex;
+  justify-content: space-between;
 }
 .flex .right {
   margin-left: auto;
