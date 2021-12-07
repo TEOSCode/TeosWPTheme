@@ -207,12 +207,12 @@ figure figcaption {
   grid-auto-rows: 320px;
   grid-template-columns: repeat(3, 1fr);
 }
-@media (min-width: 280px) {
+@media (min-width: 280px) and (max-width: 699px) {
   .post-list {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-@media (min-width: 700px) {
+@media (min-width: 700px) and (max-width: 780px) {
   .post-list {
     grid-template-columns: repeat(2, 1fr);
   }
