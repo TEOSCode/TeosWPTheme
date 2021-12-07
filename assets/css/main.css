@@ -232,6 +232,11 @@ figure figcaption {
   grid-auto-rows: 280px;
   grid-template-columns: repeat(4, 1fr);
 }
+@media (min-width: 280px) and (max-width: 699px) {
+  .post-list-small {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 .post-card {
   background: black;
   background: linear-gradient(to top, #000000 80px, transparent 80%);
