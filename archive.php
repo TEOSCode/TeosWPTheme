@@ -10,17 +10,7 @@
  */
 
 get_header(); ?>
-<style>
-.post-list{
-	gap: 8px; display: grid;grid-auto-rows: 320px; grid-template-columns: repeat(3,1fr);
-}
-.post-list .post-card:nth-child(7n+1) {
-    grid-column: 1/-2;
-}
-.post-list .post-card:nth-child(7n+7) {
-    grid-column: 2/-1;
-}
-	</style>
+
 <main id="content" class="site-main">
 
 	<?php get_template_part('template-parts/header/header', 'default'); ?>
