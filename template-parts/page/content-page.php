@@ -6,29 +6,31 @@
 
 	<?php do_action('orbital_after_page_header'); ?>
 
-	<div id="content-wrapper" class="container flex">
-		<div class="entry-content">
+	<div id="content-wrapper" class="container flex post-content">
+		<div class="entry-content single-content">
 
 			<?php do_action('orbital_before_page_content'); ?>
+			<div class="entry-post-content">
+				<?php the_content(); ?>
 
-			<?php the_content(); ?>
+				<?php wp_link_pages(array('next_or_number' => 'next')); ?>
 
-			<?php wp_link_pages(array('next_or_number' => 'next')); ?>
+				<?php do_action('orbital_after_page_content'); ?>
 
-			<?php do_action('orbital_after_page_content'); ?>
+				<?php if (comments_open() || get_comments_number()) : ?>
+					<footer class="entry-footer">
 
-			<?php if (comments_open() || get_comments_number()) : ?>
-				<footer class="entry-footer">
+						<?php do_action('orbital_before_page_comments'); ?>
 
-					<?php do_action('orbital_before_page_comments'); ?>
+						<?php comments_template(); ?>
 
-					<?php comments_template(); ?>
+						<?php do_action('orbital_before_page_comments'); ?>
 
-					<?php do_action('orbital_before_page_comments'); ?>
+					</footer>
 
-				</footer>
-
-			<?php endif; ?>
+				<?php endif; ?>
+			</div>
+			
 		</div>
 
 		<?php get_template_part('template-parts/widgets/widget', 'pages'); ?>

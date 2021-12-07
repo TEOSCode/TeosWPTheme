@@ -12,28 +12,30 @@
 get_header(); ?>
 
 <main id="content" class="site-main">
+	<div class="container site-wrapper flex">
+		<?php if (have_posts()) : ?>
+			<?php get_template_part('template-parts/header/header', 'default'); ?>
 
-	<?php if (have_posts()) : ?>
-		<?php get_template_part('template-parts/header/header', 'default'); ?>
+			<div class="post-listas entry-content">
+				<div class="post-list">
+					<?php
+					while (have_posts()) :
+						the_post();
 
-		<div class="container">
-			<div class="flex flex-fluid">
-				<?php
-				while (have_posts()) :
-					the_post();
+						get_template_part('template-parts/loops/loop', 'grid');
+					endwhile;
+					?>
+				</div>
 
-					get_template_part('template-parts/loops/loop', 'grid');
-				endwhile;
-				?>
+				<?php orbital_pagination(); ?>
+
 			</div>
 
-			<?php orbital_pagination(); ?>
-
-		</div>
-
-	<?php else :
-		get_template_part('template-parts/none/content', 'none');
-	endif; ?>
+		<?php else :
+			get_template_part('template-parts/none/content', 'none');
+		endif; ?>
+	</div>
+	
 
 </main>
 
