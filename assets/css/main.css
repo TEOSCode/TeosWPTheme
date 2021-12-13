@@ -326,6 +326,51 @@ figure figcaption {
   top: 0;
   z-index: 0;
 }
+.next-prev-postlinks {
+  display: flex;
+  justify-content: space-between;
+}
+.next-prev-postlinks a {
+  font-size: 16px;
+  background-color: #151515;
+  padding: 17px 20px;
+  color: white;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0 10px 1px rgb(0 0 0 / 10%);
+  box-sizing: border-box;
+  gap: 120px;
+}
+.next-prev-postlinks a:hover {
+  color: white !important;
+}
+.next-prev-postlinks a svg {
+  margin-top: 3px;
+}
+/* .next-prev-postlinks div.prev-link {
+  text-align: right;
+} */
+/* .next-prev-postlinks div a {
+  color: white;
+  font-size: 16px;
+  display: inline-block;
+  position: relative;
+  z-index: 10;
+  padding: 17px 20px;
+  margin: -17px -20px;
+} */
+@media (max-width: 699px) {
+  .next-prev-postlinks {
+    display: block;
+  }
+  .next-prev-postlinks div {
+    width: 100%;
+  }
+  .next-link {
+    margin-top: 15px;
+  }
+}
 .wp-block-categories-list .cat-item {
   display: flex;
   justify-content: space-between;
