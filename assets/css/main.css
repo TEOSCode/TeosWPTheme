@@ -331,40 +331,33 @@ figure figcaption {
   justify-content: space-between;
 }
 .next-prev-postlinks a {
+  position: relative;
   font-size: 16px;
   background-color: #151515;
-  padding: 17px 20px;
+  padding: 14px 12px;
   color: white;
   border-radius: 4px;
   display: flex;
   justify-content: space-between;
-  box-shadow: 0 0 10px 1px rgb(0 0 0 / 10%);
+  box-shadow: 0 0 10px 1px rgb(0 0 0 / 20%);
   box-sizing: border-box;
-  gap: 120px;
+  min-width: 48.5%;
+  transition: all 0.2s ease-in-out;
 }
 .next-prev-postlinks a:hover {
   color: white !important;
+  min-width: 49.5%;
 }
 .next-prev-postlinks a svg {
-  margin-top: 3px;
+  margin-top: 4px;
 }
-/* .next-prev-postlinks div.prev-link {
-  text-align: right;
-} */
-/* .next-prev-postlinks div a {
-  color: white;
-  font-size: 16px;
-  display: inline-block;
-  position: relative;
-  z-index: 10;
-  padding: 17px 20px;
-  margin: -17px -20px;
-} */
+
 @media (max-width: 699px) {
   .next-prev-postlinks {
     display: block;
   }
-  .next-prev-postlinks div {
+  .next-prev-postlinks a {
+    font-size: 13px;
     width: 100%;
   }
   .next-link {
