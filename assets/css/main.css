@@ -157,7 +157,7 @@ body {
   line-height: 1.5;
   word-wrap: break-word;
   overflow-x: hidden;
-  background-color: black;
+  background-color: #252525;
 }
 input,
 button,
@@ -597,12 +597,12 @@ aside#secondary .widget.widget_block {
   border-radius: 8px;
 }
 main{
-  background-color: black;
+  background-color: #252525;
 }
 /******************************************
 *****************************************/
 .single-content {
-  background-color: #191919;
+  background-color: #202020;
   border-radius: 8px 8px 0 0;
 }
 .entry-post-content {
@@ -1040,9 +1040,9 @@ ol {
 }
 .site-footer {
   padding: 1rem;
-  border-top: 1px solid black;
+  border-top: 1px solid #202020;
   letter-spacing: 1px;
-  background-color: #191919;
+  background-color: #252525;
 }
 .site-footer .widget-area-footer {
   -webkit-box-pack: justify;
