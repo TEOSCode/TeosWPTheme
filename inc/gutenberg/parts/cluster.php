@@ -51,7 +51,7 @@ if ( ! function_exists( 'orbital_render_block_core_latest_posts' ) ) :
 							false,
 							['class' => 'lazy wp-post-image']);
 					}
-
+					//Custom link apariencia
 					if($attributes['featured'] >= $entry) {
 						/*$output .= '
 						<article class="post-card ">
