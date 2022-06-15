@@ -19,5 +19,5 @@ $feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
 			<?php endif; ?>	</time>
 		</div>
 	</div>
-	<div class="post-card-background" style="z-index:-1; backgorund-color:#151515; background-image:url('<?php echo $feat_image;?>');"></div>
+	<div class="post-card-background" style="backgorund-color:#151515; background-image:url('<?php echo $feat_image;?>');"></div>
 </article>
