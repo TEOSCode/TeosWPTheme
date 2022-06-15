@@ -207,6 +207,10 @@ figure figcaption {
   grid-auto-rows: 320px;
   grid-template-columns: repeat(3, 1fr);
 }
+.post-list.customLink {
+  grid-template-columns: repeat(3, 1fr);
+
+}
 @media (min-width: 280px) and (max-width: 699px) {
   .post-list {
     grid-template-columns: repeat(1, 1fr);
@@ -223,6 +227,12 @@ figure figcaption {
   }
   .post-list .post-card:nth-child(7n + 7) {
     grid-column: 2/-1;
+  }
+  .post-list .post-card.customLink:nth-child(7n + 4) {
+    grid-column: initial;
+  }
+  .post-list .post-card.customLink:nth-child(7n + 7) {
+    grid-column: initial;
   }
 }
 
