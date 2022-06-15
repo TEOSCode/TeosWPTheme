@@ -6,7 +6,7 @@ $feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
 	<a href="<?php echo get_permalink();?>" class="post-card-link" tabindex="-1"><?php the_title();?></a>
 	<div class="post-card-body">
 		<h2 class="post-card-title">
-			<a href="<?php echo get_permalink();?>"><?php the_title();?> </a>
+			<a href="<?php echo get_permalink();?>"><?php the_title();?></a>
 		</h2>
 		<div class="post-card-category">
 			<?php if (orbital_customize_option('orbital_loop_category') && ! is_archive()) : ?>

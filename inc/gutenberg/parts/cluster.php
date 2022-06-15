@@ -9,7 +9,8 @@ if ( ! function_exists( 'orbital_render_block_core_latest_posts' ) ) :
 
 
 		// Start Output
-		$output .= '<div class="flex flex-fluid columns-'. $attributes['columns'] . '">';
+
+		$output .= '<div class="post-list">';
 
 		if($attributes['display'] == 'custom-links'){
 
@@ -179,63 +180,38 @@ if ( ! function_exists( 'orbital_render_block_core_latest_posts' ) ) :
 					}
 
 					if($featured < $attributes['featured']) {
-						$output .= '<article id="post-' . get_the_ID() . '" class="featured-item">';
-						$output .= '<div class="featured-wrapper">';
-						$output .= '<a href="'. $setting['link'] . '" rel="bookmark ' . $nofollow . '" '. $openlink .'>';
-
-						if(isset($image)) { $output .= $image; }
-
-						$output .= '<h3 class="entry-title">'. $setting['heading'] . '</h3>';
-						$output .= '</a>';
-						$output .= '</div>';
-						$output .= '</article>';
+						$feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+						$output .= '
+						<article class="post-card ">
+						<a href="'. $setting["link"] . '" class="post-card-link" tabindex="-1" rel="bookmark ' . $nofollow . '" '. $openlink .'>'.$setting['heading'].'</a>
+						<div class="post-card-body">
+						<h2 class="post-card-title"><a href="'. $setting['link'] . '">'.$setting['heading'].'</a></h2>
+						<div class="post-card-category">'. orbital_the_category_link(). '</div>
+						<div class="post-card-date"><!-- Tiene flex -->
+						<time>' . get_the_date(). '</time>
+						</div>
+						</div>
+						<div class="post-card-background" style="z-index:-1; background-image:url(\''.$feat_image.'\');"></div>
+						</article>
+						';
+							
 
 					} else {
-
-						$output .= '<article class="entry-item">';
-						$output .= '<div class="entry-card">';
-						
-
-						
-
-						
-						$output .= '<header class="entry-header">';
-						$output .= '<a href="'. $setting['link'] . '" rel="bookmark ' . $nofollow . '" '. $openlink .'>';
-						if(isset($image)) { $output .= $image; }
-						$output .= '<h3 class="entry-title">'.$setting['heading'].'</h3>';
-						$output .= '</a>';
-						if(orbital_customize_option('orbital_loop_category') && ! is_archive()) {
-							$output .= '<div class="entry-category">';
-							$output .= '<p class="entry-category-info">' . orbital_the_category_link() . '</p>';
-							$output .= '</div>';
-						}
-						$output .= '</header>';
-						$output .= '<div class="entry-meta">';
-						
-
-						if(orbital_customize_option('orbital_loop_excerpt')) {
-							$output .= '<div class="entry-excerpt">';
-							if($attributes['excerpt']  == 'default' && has_excerpt()){
-								$output .= '<p class="entry-excerpt-info">' . get_the_excerpt() .'</p>';
-							}elseif($attributes['excerpt']  == 'yoast'){
-								$output .= '<p class="entry-excerpt-info">' . get_post_meta(get_the_ID(), '_yoast_wpseo_metadesc', true) .'</p>';
-							}
-
-							$output .= '</div>';
-						}
-						if(orbital_customize_option('orbital_loop_date')) {
-							$output .= '<div class="entry-date">';
-							$output .= '<p class="entry-date-info">' . get_the_date(). '</p>';
-							$output .= '</div>';
-						}
-						if(orbital_customize_option('orbital_loop_author')) {
-							$output .= '<div class="entry-author">';
-							$output .= '<p class="entry-author-info">' . get_the_author() . '</p>';
-							$output .= '</div>';
-						}
-						$output .= '</div>';
-						$output .= '</div>';
-						$output .= '</article>';
+						$feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+						$output .= '
+						<article class="post-card ">
+						<a href="'. $setting["link"] . '" class="post-card-link" tabindex="-1" rel="bookmark ' . $nofollow . '" '. $openlink .'>'.$setting['heading'].'</a>
+						<div class="post-card-body">
+						<h2 class="post-card-title"><a href="'. $setting['link'] . '">'.$setting['heading'].'</a></h2>
+						<div class="post-card-category">'. orbital_the_category_link(). '</div>
+						<div class="post-card-date"><!-- Tiene flex -->
+						<time>' . get_the_date(). '</time>
+						</div>
+						</div>
+						<div class="post-card-background" style=" background-image:url(\''.$feat_image.'\');"></div>
+						</article>
+						';
+												
 
 					}
 
