@@ -53,7 +53,22 @@ if ( ! function_exists( 'orbital_render_block_core_latest_posts' ) ) :
 					}
 
 					if($attributes['featured'] >= $entry) {
-						$output .= '<article class="featured-item custom-link">';
+						/*$output .= '
+						<article class="post-card ">
+						<a href="'. $setting["link"] . '" class="post-card-link" tabindex="-1" rel="bookmark ' . $nofollow . '" '. $openlink .'>'.$setting['heading'].'</a>
+						<div class="post-card-body">
+						<h2 class="post-card-title"><a href="'. $setting['link'] . '">'.$setting['heading'].'</a></h2>
+						<div class="post-card-category">'. orbital_the_category_link(). '</div>
+						<div class="post-card-date"><!-- Tiene flex -->
+						<time>' . get_the_date(). '</time>
+						</div>
+						</div>
+						<div class="post-card-background" style="z-index:-1; background-image:url(\''.$feat_image.'\');"></div>
+						</article>
+						featured-item custom-link
+						entry-item custom-link
+						';*/
+						$output .= '<article class="post-card">';
 						$output .= '<div class="featured-wrapper">';
 						$output .= '<a href="'. $linkUrl  .'" ' . $nofollow . '" '. $openlink .'>';
 						$output .= $image;
@@ -62,7 +77,7 @@ if ( ! function_exists( 'orbital_render_block_core_latest_posts' ) ) :
 						$output .= '</div>';
 						$output .= '</article>';
 					}else{
-						$output .= '<article class="entry-item custom-link">';
+						$output .= '<article class="post-card">';
 						$output .= '<div class="entry-wrapper">';
 						$output .= '<header class="entry-header">';
 						$output .= '<a href="'. $linkUrl .'" ' . $nofollow . '" '. $openlink .'>';
