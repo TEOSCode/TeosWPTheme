@@ -288,7 +288,7 @@ figure figcaption {
   background: linear-gradient(to top, #000000 80px, transparent 80%);
 }
 .post-card:hover .post-card-background {
-  opacity: 0.7;
+  opacity: 0.5;
 }
 
 .post-card-link {
