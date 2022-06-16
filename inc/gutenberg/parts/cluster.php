@@ -198,7 +198,7 @@ if ( ! function_exists( 'orbital_render_block_core_latest_posts' ) ) :
 						<article class="post-card ">
 						<a href="'. $setting["link"] . '" class="post-card-link" tabindex="-1" rel="bookmark ' . $nofollow . '" '. $openlink .'>'.$setting['heading'].'</a>
 						<div class="post-card-body">
-						<h3 class="post-card-title"><a href="'. $setting['link'] . '">'.$setting['heading'].'</a></h3>
+						<h3 class="post-card-title"><a href="'. $setting['link'] . '">'.$attributes['display'].$setting['heading'].'</a></h3>
 						<div class="post-card-category">'. orbital_the_category_link(). '</div>
 						<div class="post-card-date"><!-- Tiene flex -->
 						<time>' . get_the_date(). '</time>
@@ -212,7 +212,7 @@ if ( ! function_exists( 'orbital_render_block_core_latest_posts' ) ) :
 					} else {
 						$feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
 						$output .= '
-						<article class="post-card ">
+						<article class="post-card '.$attributes['display'].'">
 						<a href="'. $setting["link"] . '" class="post-card-link" tabindex="-1" rel="bookmark ' . $nofollow . '" '. $openlink .'>'.$setting['heading'].'</a>
 						<div class="post-card-body">
 						<h3 class="post-card-title"><a href="'. $setting['link'] . '">'.$setting['heading'].'</a></h3>

@@ -234,6 +234,13 @@ figure figcaption {
   .post-list .post-card.customLink:nth-child(7n + 7) {
     grid-column: initial;
   }
+  .post-list .post-card.pilar:nth-child(7n + 4) {
+    grid-column: initial;
+  }
+  .post-list .post-card.pilar:nth-child(7n + 7) {
+    grid-column: initial;
+  }
+  
 }
 
 .post-list-small {
